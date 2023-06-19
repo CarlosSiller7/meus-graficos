@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+    <link rel="stylesheet" href="./estilo.css">
+
+</head>
+
+<body>
+        <h1 class="titulo">Meus Gráficos</h1>
+        <div style="width: 400px; height: 200px;" class="grafico-um">
+            <canvas id="graficoUm" style="width: 200px; height: 200px;"></canvas>
+        </div>
+        <script>
+            var dados = {
+                datasets: [{
+                    data: [30, 40, 50],
+                    backgroundColor: ['rgb(255, 99, 132,)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)']
+                }],
+                labels: ['Sarah', 'John', 'Carter']
+            };
+
+            // Opções
+            var opcoes = {
+                responsive: true,
+                maintainAspectRatio: false
+            };
+
+            // Criar o gráfico donut
+            var ctx = document.getElementById('graficoUm').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: dados,
+                options: opcoes
+            });
+
+
+        </script>
+        <div style="width: 400px; height: 200px" class="grafico-dois">
+            <canvas id="graficoDois" style="width: 400px; height: 200px;"></canvas>
+        </div>
+
+        <script>
+            // Dados
+            var dados = {
+                datasets: [{
+                    data: [10, 10, 50],
+                    backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)']
+                }],
+                labels: ['Sarah', 'John', 'Carter']
+            };
+
+            // Opções
+            var opcoes = {
+                responsive: true,
+                maintainAspectRatio: false
+            };
+
+            // Criar o gráfico de pizza
+            var ctx = document.getElementById('graficoDois').getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: dados,
+                options: opcoes
+            });
+        </script>
+
+        <div style="width: 400px; height: 200px" class="grafico-tres">
+            <canvas id="graficoTres" style="width: 400px; height: 200px;"></canvas>
+        </div>
+
+        <script>
+            // Dados
+            var dados = {
+                datasets: [{
+                    data: [70, 40, 50, 80, 80, 90, 100],
+                    backgroundColor: ['rgb(255, 99, 132, .4)', 'rgb(54, 162, 235, .7)', 'rgb(255, 205, 86, .7)', 'rgb(8, 5, 6, .7)', 'rgb(25, 205, 76, .7)', 'rgb(25, 55, 86, .7)', 'rgb(255, 20, 56, .7)']
+                }],
+                labels: ['Sarah', 'John', 'Carter', 'Peggy', 'Matthew', 'Craig', 'Donald']
+            };
+
+            // Opções
+            var opcoes = {
+                responsive: true,
+                maintainAspectRatio: false
+            };
+
+            // Criar o gráfico de pizza
+            var ctx = document.getElementById('graficoTres').getContext('2d');
+            new Chart(ctx, {
+                type: 'radar',
+                data: dados,
+                options: opcoes
+            });
+        </script>      
+</body>
+
+</html>

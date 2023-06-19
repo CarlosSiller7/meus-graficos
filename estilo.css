@@ -1,0 +1,57 @@
+body {
+    position: relative;
+    background-color: aquamarine;
+    margin-left: 250px;
+    justify-content: center;
+}
+.titulo {
+    margin-left: 350px;
+}
+.grafico-um {
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 2px black solid;
+    padding: 10px;
+    padding-bottom: 15px;
+    opacity: 0.5;
+}
+
+.grafico-um:hover {
+    background-color: rgb(67, 67, 67,.2);
+    border: 2px white solid;
+    transform: scale(1.0);
+    opacity: 1;
+}
+
+.grafico-dois {
+    margin-top: -228px;
+    margin-left: 450px;
+    position: absolute;
+    border: 2px black solid;
+    padding: 10px;
+    padding-bottom: 15px;
+    opacity: 0.5;
+
+}
+
+.grafico-dois:hover {
+    background-color: rgb(67, 67, 67,.2);
+    border: 2px white solid;
+    transform: scale(1.0);
+    opacity: 1;
+}
+
+.grafico-tres {
+    margin-top: 30px;
+    margin-left: 250px;
+    border: 2px black solid;
+    padding: 10px;
+    opacity: 0.5;
+}
+
+.grafico-tres:hover {
+    background-color: rgb(67, 67, 67,.2);
+    border: 2px white solid;
+    transform: scale(1.0);
+    opacity: 1;
+}
